@@ -55,7 +55,7 @@ a{
   /*Req 4*/
   font-size: 16px;
   color: #c12258;
-  text-decoration: wavy;
+  text-decoration: underline wavy;
 }
 
 /*Req 5*/
@@ -67,17 +67,27 @@ a{
 
 /*Req 6a*/
 td{
+  border-top: 2px solid black;
+  padding: 10px;
+  text-align: center;
   
 }
 
 /*Req 6b*/
 .colhead{
   color: #FFFFFF;
+  background-color: #7e0820;
+  min-width: 125px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
 
 }
 /*Req 6c*/
 .rowhead{
-
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  vertical-align: middle;
 }
 
 /*Req 6d*/
@@ -101,5 +111,8 @@ footer{
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+
+  min-height: 75px;
+  position: sticky;
 }
 
