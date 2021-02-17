@@ -70,7 +70,6 @@ td{
   border-top: 2px solid black;
   padding: 10px;
   text-align: center;
-  
 }
 
 /*Req 6b*/
@@ -91,16 +90,34 @@ td{
 }
 
 /*Req 6d*/
-/*Req 6e*/
-/*Req 6f*/
+/*Req 6e - Already transparent*/
+tr:nth-child(even) {
+  background-color: #d1d1d1;
+}
 
+/*Req 6f*/
+tr:hover {
+  background-color: rgba(126, 8, 32, 0.25);
+}
 
 /*Req 7*/
 table{
-    border: 2px solid #000000;
+  margin: 0 auto;
+  border: 2px solid #000000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
 }
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-top-left-radius: 10px;
+}
+
+thead tr:first-child th:last-child{
+  border-top-right-radius: 10px;
+}
 
 /*Add selectors and rules here*/
 
@@ -113,6 +130,8 @@ footer{
   color: #FFFFFF;
 
   min-height: 75px;
-  position: sticky;
+  left: 0;
+  bottom: 0;
+  position: absolute;
 }
 
